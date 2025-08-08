@@ -34,7 +34,7 @@ class TestSimpleCalculator(unittest.TestCase):
         # Test with floats
         self.assertAlmostEqual(self.calc.subtract(0.3, 0.1), 0.2, places=7)
 
-    def test_multiplication(self):
+    def test_multiply(self):
         """Test the multiply method with various scenarios"""
         # Test positive numbers
         self.assertEqual(self.calc.multiply(2, 3), 6)
@@ -49,7 +49,7 @@ class TestSimpleCalculator(unittest.TestCase):
         # Test identity property
         self.assertEqual(self.calc.multiply(5, 1), 5)
 
-    def test_division(self):
+    def test_divide(self):
         """Test the divide method with various scenarios"""
         # Test normal division
         self.assertEqual(self.calc.divide(6, 3), 2)
